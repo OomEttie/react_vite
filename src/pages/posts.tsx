@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Routes, Route, Link } from "react-router-dom";
-import { NavLinks } from "./navlinks";
+import { NavLinks } from "./_navlinks";
 
 import { jsonplaceholder } from "../api/jsonplaceholder";
 import { IJsonPlaceholderPost } from "../models/posts";
@@ -23,7 +23,6 @@ export const Posts = () => {
         <h2>**** Posts ****</h2>
       </main>
       <li>{`${post?.id} - ${post?.title}`}</li>
-      <NavLinks />
     </>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
-import { NavLinks } from "./navlinks";
+import { NavLinks } from "./_navlinks";
 
 export const Home = () => {
   const token = (import.meta as any).env.VITE_TOKEN;
@@ -9,9 +9,8 @@ export const Home = () => {
   return (
     <>
       <main>
-        <h2>**** Home</h2>
+        <h2>**** Home ****</h2>
       </main>
-      <NavLinks />
     </>
   );
 };

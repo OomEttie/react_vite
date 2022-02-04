@@ -6,9 +6,10 @@ export const NavLinks = () => {
     <>
       <br />
       <nav>
-        <Link to="/">Home</Link> <br />
-        <Link to="/about">About</Link> <br />
-        <Link to="/posts">Posts</Link> <br />
+        <Link to="/">Home * </Link>
+        <Link to="/posts">Posts * </Link>
+        <Link to="/hooks">Hooks * </Link>
+        <Link to="/context">Context * </Link>
       </nav>
     </>
   );

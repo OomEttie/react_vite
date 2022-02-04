@@ -1,14 +1,13 @@
 import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
-import { NavLinks } from "./navlinks";
+import { NavLinks } from "./_navlinks";
 
-export const About = () => {
+export const HOComponents = () => {
   return (
     <>
       <main>
-        <h2>**** About</h2>
+        <h2>**** HOComponents ****</h2>
       </main>
-      <NavLinks />
     </>
   );
 };
