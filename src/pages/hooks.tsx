@@ -1,4 +1,4 @@
-import React, { ChangeEventHandler, useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 
@@ -20,14 +20,13 @@ export const Hooks = () => {
   });
 
   const [user, setUser] = useState({ name: "", email: "" });
-  const fetchUser = async () => {
+  const fetchUser = useCallback(async () => {
     const res = await fetch(`https://jsonplaceholder.typicode.com/users/1`);
     const newUser = await res.json();
     setUser(newUser);
-  };
+  }, []);
 
   useEffect(() => {
-    console.log("Fetching user");
     fetchUser();
   }, []);
 
@@ -40,9 +39,9 @@ export const Hooks = () => {
         <input value={firstName} onChange={handleFirstNameChange} />
         <br />
         <input value={lastName} onChange={handleLastNameChange} />
-        <p>
-          Hello,{" "}
-          <span>
+        <p style={{ textAlign: "center" }}>
+          Hello,
+          <span style={{ textAlign: "center" }}>
             {firstName} {lastName}
           </span>
         </p>

@@ -1,5 +1,4 @@
-import React, { Component, useContext, useState } from "react";
-import { render } from "react-dom";
+import React, { useContext, useState } from "react";
 // import "./style.css";
 
 const ProfileContext = React.createContext<any>(undefined);

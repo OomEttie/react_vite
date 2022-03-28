@@ -1,27 +1,21 @@
 // values
 const number = 1;
-const greeting = "Hello";
+const greeting = 'Hello';
 
 // function declaration
 function foo() {
-  return "bar";
+  return 'bar';
 }
 
 // named function expression - possible
 // because functions are first-class
 // and therefore usable as values
 const otherFoo = function () {
-  return "bar";
+  return 'bar';
 };
 
 // using arrow functions and implicit return
-const anotherFoo = () => "bar";
-
-// console.log(number); // 1
-// console.log(greeting); // 'Hello'
-// console.log(foo()); // 'bar'
-// console.log(otherFoo()); // 'bar'
-// console.log(anotherFoo()); // 'bar'
+const anotherFoo = () => 'bar';
 
 // ***** Higher-Order Functions *****
 const identity = (x) => x;
@@ -33,6 +27,3 @@ const ident2 = identity(foo);
 //   return 'bar';
 // }
 const ident3 = identity(foo)(); // 'bar'
-console.log(ident1);
-console.log(ident2);
-console.log(ident3);

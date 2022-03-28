@@ -6,6 +6,12 @@
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview"
   },
+  "prettier": {
+    "printWidth": 120,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
