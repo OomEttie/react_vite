@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export const NavLinks = () => {
   return (
@@ -12,6 +12,7 @@ export const NavLinks = () => {
         <Link to="/hooks">Hooks * </Link>
         <Link to="/context">Context * </Link>
         <Link to="/generics1">Generics * </Link>
+        <Link to="/reactquery">ReactQuery * </Link>
       </nav>
     </>
   );
